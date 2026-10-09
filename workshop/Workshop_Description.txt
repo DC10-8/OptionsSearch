@@ -1,0 +1,68 @@
+[h1]Options Search / オプション検索[/h1]
+[b]English follows the Japanese section. / 日本語 → English の順です。[/b]
+
+[hr][/hr]
+
+[h2]日本語[/h2]
+MODを何十個も入れると、オプション画面の設定項目が多すぎて目的の項目が見つかりません。このMODは、オプション画面に [b]検索ボックス[/b] を追加し、ゲーム本体と全MODの設定項目を横断検索します。
+
+[h3]特徴[/h3]
+[list]
+[*] ゲーム本体と全MODの設定を一括検索 (ラベル・ボタン・ツールチップ・ドロップダウンの選択肢)
+[*] MOD名・カテゴリ名でも検索可能 (MODリストの検索にも使えます)
+[*] スペース区切りでAND検索 (例: [i]traffic lights[/i])
+[*] 結果をクリックすると、該当のカテゴリ/MODページへ自動で移動し、項目を点滅表示
+[*] オプション画面を開くたびに索引を更新 (MODの追加・削除に自動対応)
+[*] 英語/日本語UIに対応 (設定で 自動・English・日本語 を選択)
+[/list]
+
+[h3]使い方[/h3]
+[list]
+[*] ゲームを開き、Esc → オプション を開く
+[*] 左上の検索ボックスに入力 ([b]Ctrl+F[/b] でもフォーカス可能)。例: [i]electricity[/i]
+[*] 一致する項目が一覧表示されます。マウスホイールでスクロール
+[*] 項目をクリック ([b]Enter[/b] で先頭) → 該当の設定へ移動して点滅
+[*] [b]Esc[/b] で入力をクリア
+[/list]
+
+[h3]設定[/h3]
+MODオプションの「Options Search」から、言語・ツールチップ/選択肢の検索対象・最大表示件数を変更できます。
+
+[h3]注意[/h3]
+[list]
+[*] 検索対象は、オプション画面に実際に作られているUI要素です。MODの設定画面を独自の方法で描画している場合は検索できないことがあります。
+[*] 不具合報告やご要望は、コメント欄でお知らせください。
+[/list]
+
+[hr][/hr]
+
+[h2]English[/h2]
+With dozens of mods installed, the Options screen becomes a maze. This mod adds a [b]search box[/b] to the Options screen and searches the base game and every mod's settings at once.
+
+[h3]Features[/h3]
+[list]
+[*] One search across the base game and all mods (labels, buttons, tooltips, dropdown choices)
+[*] Also matches mod and category names, so it doubles as a mod list search
+[*] Multi-word AND search (e.g. [i]traffic lights[/i])
+[*] Click a result to jump to the right category / mod page, with the setting highlighted
+[*] The index is rebuilt every time you open Options, so added or removed mods are picked up
+[*] English and Japanese UI (Auto / English / 日本語 in the settings)
+[/list]
+
+[h3]How to use[/h3]
+[list]
+[*] Press Esc → Options
+[*] Type in the search box at the top left (or press [b]Ctrl+F[/b]). Example: [i]electricity[/i]
+[*] Matching options are listed. Scroll with the mouse wheel
+[*] Click a result ([b]Enter[/b] picks the first) to jump to the setting and make it blink
+[*] Press [b]Esc[/b] to clear the search
+[/list]
+
+[h3]Settings[/h3]
+Under "Options Search" in the mod options you can change the language, whether tooltips and dropdown choices are searched, and the maximum number of results.
+
+[h3]Notes[/h3]
+[list]
+[*] Only UI elements actually built in the Options screen are searchable. Mods that draw their settings in a custom way may not appear.
+[*] Bug reports and requests are welcome in the comments.
+[/list]

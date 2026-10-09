@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net35</TargetFramework>
+    <AssemblyName>OptionsSearch</AssemblyName>
+    <RootNamespace>OptionsSearch</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <DebugType>none</DebugType>
+    <Deterministic>true</Deterministic>
+    <Version>1.0.0</Version>
+
+    <!-- Cities: Skylines 1 の Managed フォルダ。環境に合わせて変更してください -->
+    <CSLManaged Condition="'$(CSLManaged)' == ''">C:\Program Files (x86)\Steam\steamapps\common\Cities_Skylines\Cities_Data\Managed</CSLManaged>
+    <!-- ビルド後にコピーするローカルMODフォルダ -->
+    <ModDir Condition="'$(ModDir)' == ''">$(LOCALAPPDATA)\Colossal Order\Cities_Skylines\Addons\Mods\OptionsSearch</ModDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp"><HintPath>$(CSLManaged)\Assembly-CSharp.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="ColossalManaged"><HintPath>$(CSLManaged)\ColossalManaged.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="ICities"><HintPath>$(CSLManaged)\ICities.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine"><HintPath>$(CSLManaged)\UnityEngine.dll</HintPath><Private>False</Private></Reference>
+  </ItemGroup>
+
+  <Target Name="DeployMod" AfterTargets="Build" Condition="'$(OS)' == 'Windows_NT'">
+    <MakeDir Directories="$(ModDir)" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(ModDir)" />
+  </Target>
+
+</Project>
